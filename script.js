@@ -1,72 +1,16 @@
 let myLibrary = [{bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'},]; 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'},
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'},
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'}, 
-    // {bookname: 'BookTitle', author: 'arnold', pages: '161', read: 'Unread'},];      
 
 
 
-
-    const addBookButton = document.querySelector('.addbookbutton');
+const addBookButton = document.querySelector('.addbookbutton');
 const popupMenuAddBook = document.querySelector('div.popupmenu');
 const mainContainer = document.querySelector('div.main');
 const localPCStorage = () => {localStorage.setItem('mylibrary', JSON.stringify(myLibrary))}; //sets items in storage.
 const getLocalPCStorage = () => {JSON.parse(localStorage.getItem('mylibrary'))}; //gets items from local pc storage
 
-// if (JSON.parse(localStorage.getItem('mylibrary')) !== null){
-//     myLibrary = JSON.parse(localStorage.getItem('mylibrary'));
-// }
+if (JSON.parse(localStorage.getItem('mylibrary')) !== null){
+    myLibrary = JSON.parse(localStorage.getItem('mylibrary'));
+}
 
 function CreateCards(book, index){
 
@@ -135,23 +79,11 @@ document.getElementById('myform').onsubmit = function() {//listener on form subm
     console.log(form.bookname.value,"form");
     const read = (form.read.checked === true ? "Read" : "Unread");
     addBookToLibrary(form.bookname.value, form.author.value, form.pages.value, read);
-    form.reset();
+    form.reset(); //wipes form fields
     popupMenuAddBook.style.visibility = "hidden";//hides menu after form submit
 
     return false;//prevents default form sending behaviour.
 };
 addBookButton.onclick = function() { //onclick detects click.
-    popupMenuAddBook.style.visibility = "visible";    //shows book button menu.
-
+    popupMenuAddBook.style.visibility = "visible";    //shows book menu.
 }
-
-
-
-
-
-// const populateStorage = () => {
-//     localStorage.setItem('library', JSON.stringify(myLibrary));
-//   }
-
-//   const getStorage = () => {
-//     myLibrary = JSON.parse(localStorage.getItem('library'));
