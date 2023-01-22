@@ -39,7 +39,7 @@ html {
   grid-template-columns: repeat(auto-fit, minmax(200px, 0.2fr));
   background-color: rgb(212, 212, 210);
   grid-auto-rows: 25%; /* min height, allows scrolling */
-  overflow: scroll; /* not necessary here.*/
+  overflow: auto; /* hides scrollbar if not needed*/
 }
 
 .main > div {
