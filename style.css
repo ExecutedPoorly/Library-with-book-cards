@@ -35,13 +35,15 @@ html {
 .container .main {
   display: grid;
   padding: 20px;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: repeat(auto-fit, minmax(300px, 0.2fr));
   grid-template-columns: repeat(auto-fit, minmax(200px, 0.2fr));
-  grid-auto-rows: 1fr;
   background-color: rgb(212, 212, 210);
+  grid-auto-rows: 25%; /* min height, allows scrolling */
+  overflow: scroll; /* not necessary here.*/
 }
 
 .main > div {
+	min-width: fit-content;
   word-break: break-all;
   overflow: hidden;
   font-size: 1rem;
