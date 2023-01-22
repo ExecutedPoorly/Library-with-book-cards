@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: cursive;
+}
+
+#yessmall > * {
+  font-size: small;
+}
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 1fr 12fr 1fr;
+  grid-template-columns: 3fr 10fr;
+  grid-template-areas:
+    "header header header header header header"
+    "main main main main main main"
+    "main main main main main main";
+  gap: 10px;
+  background-color: #b7c7d4;
+  /* padding: 10px; */
+}
+.container > div {
+  background-color: rgba(57, 89, 131, 0.986);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+.container .main {
+  display: grid;
+  padding: 20px;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 0.2fr));
+  grid-auto-rows: 1fr;
+  background-color: rgb(212, 212, 210);
+}
+
+.main > div {
+  word-break: break-all;
+  overflow: hidden;
+  font-size: 1rem;
+  background-color: rgb(235, 226, 226);
+  border-radius: 1.2rem;
+  font-family: cursive;
+  margin: 1rem;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+}
+
+.main > div > * {
+  margin: 10px;
+}
+
+.readtoggle {
+  min-width: fit-content;
+  font-size: 2rem;
+  width: 70%;
+  height: 20%;
+}
+.deletebutton {
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.addbookbutton {
+  position: absolute;
+  margin: 10px;
+  bottom: 0;
+  right: 0;
+  box-shadow: 0px 10px 14px -7px #276873;
+  background: linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
+  background-color: #599bb3;
+  border-radius: 42px;
+  border-width: 0;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 17px 20px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #3d768a;
+}
+.addbookbutton:hover {
+  background: linear-gradient(to bottom, #408c99 5%, #599bb3 100%);
+  background-color: #408c99;
+}
+.addbookbutton:active {
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background-color: #2f6872;
+}
+
+.container .popupmenu {
+  visibility: hidden;
+  border-radius: 0.4rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(
+    -50%,
+    -50%
+  ); /* removes half the elements width/height for centering*/
+  padding: 1rem 2rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-left: 1px;
+}
+
+.sidebar ul li input {
+  border-radius: 2em;
+}
+
+#readid {
+  font-size: 18px;
+}
+
+.header {
+  grid-area: header;
+}
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}
